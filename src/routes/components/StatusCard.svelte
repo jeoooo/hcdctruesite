@@ -8,7 +8,7 @@
 </script>
 
 {#if operationalText == 'Online'}
-	<div class="component shadow-md h-32 bg-green-50">
+	<div class="component shadow-md h-32 bg-green-50" aria-label={`Status: Online - ${websiteText}`}>
 		<a
 			href={url}
 			target="_blank"
@@ -21,7 +21,10 @@
 		<p class="text-l pl-4 pt-6">{officialText}</p>
 	</div>
 {:else if operationalText == 'Experiencing Issues'}
-	<div class="component shadow-md h-32 bg-red-50">
+	<div
+		class="component shadow-md h-32 bg-red-50"
+		aria-label={`Status: Experiencing Issues - ${websiteText}`}
+	>
 		<a
 			href={url}
 			target="_blank"
@@ -35,7 +38,10 @@
 	</div>
 {:else}
 	<!-- ? LOADING  -->
-	<div class="component shadow-md h-32 bg-yellow-50">
+	<div
+		class="component shadow-md h-32 bg-yellow-50"
+		aria-label={`Status: Loading - ${websiteText}`}
+	>
 		<a
 			href={url}
 			target="_blank"
@@ -47,25 +53,12 @@
 
 		<p class="text-l pl-4 pt-6">{officialText}</p>
 	</div>
-	<!-- <div class="component shadow-md h-32 bg-green-50">
-		<a
-			href={url}
-			target="_blank"
-			class="mb-2 text-3xl ml-4 mt-4 inline-flex items-center font-bold text-green-800 dark:text-[#053772] hover:underline"
-		>
-			<h3>{websiteText}</h3>
-		</a>
-		<StatusBadge status={operationalText} />
-
-		<p class="text-l pl-4 pt-6">{officialText}</p>
-	</div> -->
 {/if}
 
 <style>
 	.component {
 		position: relative;
 		width: 70%;
-
 		border: 2px solid;
 		border-color: #00000020;
 		border-radius: 15px;

@@ -2,11 +2,6 @@
 	import Faq from '../components/FAQ.svelte';
 </script>
 
-<main class="pt-4 flex flex-col items-center justify-center">
-	<!-- ... (your existing code) ... -->
-	<h1 class="text-4xl font-bold pt-8 pb-8">HCDC True Site | Frequently Asked Questions (FAQ)</h1>
-	<Faq />
-</main>
 <svelte:head>
 	<title>FAQ</title>
 
@@ -30,3 +25,14 @@
 
 	<!-- Meta Tags Generated with https://metatags.io -->
 </svelte:head>
+<main class="pt-4 flex flex-col items-center justify-center">
+	<!-- ... (your existing code) ... -->
+	<h1 class="text-4xl font-bold pt-8 pb-8">HCDC True Site | Frequently Asked Questions (FAQ)</h1>
+	<Faq />
+</main>
+
+<style>
+	h1 {
+		font-family: 'Avenir LT Std Black';
+	}
+</style>
