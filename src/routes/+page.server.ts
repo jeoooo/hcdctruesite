@@ -45,7 +45,8 @@ const interval: NodeJS.Timeout = setInterval(checkStatus, 60 * 60 * 1000);
 
 export const load: PageServerLoad = async () => {
 	return {
-		'hcdc.edu.ph': statuses[0],
-		'http://studentportal.hcdc.edu.ph': statuses[1]
+		'http://hcdc.edu.ph': statuses[0],
+		'http://studentportal.hcdc.edu.ph': statuses[1],
+		'http://cetlms.hcdc.edu.ph/': statuses[2]
 	};
 };

@@ -1,12 +1,13 @@
 <script>
 	import { Accordion, AccordionItem, Card } from 'flowbite-svelte';
+	import Link from './Link.svelte';
 </script>
 
 <Accordion
-	class="w-[70%] 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800'"
+	class="w-[75%] 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800'"
 	multiple
 >
-	<AccordionItem>
+	<AccordionItem open>
 		<span slot="header" class="text-lg font-bold flex gap-2">
 			<svg
 				class="w-6 h-6 text-gray-900 dark:text-white"
@@ -19,7 +20,48 @@
 					d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm0 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm1-5.034V12a1 1 0 0 1-2 0v-1.418a1 1 0 0 1 1.038-.999 1.436 1.436 0 0 0 1.488-1.441 1.501 1.501 0 1 0-3-.116.986.986 0 0 1-1.037.961 1 1 0 0 1-.96-1.037A3.5 3.5 0 1 1 11 11.466Z"
 				/>
 			</svg>
-			<span class="text-gray-900">Why did you create this project?</span>
+			<span class="text-gray-900">What is HCDC True Site?</span>
+		</span>
+		<p class="mb-2 text-gray-900 dark:text-gray-400">
+			This is a third-party, open-source project serves as a Uptime Status Checker for official Holy
+			Cross of Davao College (HCDC) websites.
+		</p>
+		<p class="mb-2 text-gray-900 dark:text-gray-400">
+			It regularly monitors the availability and status of key HCDC websites, providing users with
+			real-time information about their operational status.
+		</p>
+		<p class="mb-2 text-gray-900 dark:text-gray-400">
+			The following websites are officially being monitored availability and status:
+		</p>
+		<ul class="max-w-l space-y-1 text-black list-disc list-inside indent-10">
+			<li>
+				<Link href="https://hcdc.edu.ph/">hcdc.edu.ph</Link> - The official website of The Holy Cross
+				of Davao College
+			</li>
+			<li>
+				<Link href="http://studentportal.hcdc.edu.ph/login">studentportal.hcdc.edu.ph</Link> - The official
+				student portal of The Holy Cross of Davao College
+			</li>
+			<li>
+				<Link href="http://cetlms.hcdc.edu.ph/">cetlms.hcdc.edu.ph</Link> - The official Learning Management
+				System (LMS) of The Holy Cross of Davao College - College of Engineering and Technology
+			</li>
+		</ul>
+	</AccordionItem>
+	<AccordionItem open>
+		<span slot="header" class="text-lg font-bold flex gap-2">
+			<svg
+				class="w-6 h-6 text-gray-900 dark:text-white"
+				aria-hidden="true"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+			>
+				<path
+					d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm0 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm1-5.034V12a1 1 0 0 1-2 0v-1.418a1 1 0 0 1 1.038-.999 1.436 1.436 0 0 0 1.488-1.441 1.501 1.501 0 1 0-3-.116.986.986 0 0 1-1.037.961 1 1 0 0 1-.96-1.037A3.5 3.5 0 1 1 11 11.466Z"
+				/>
+			</svg>
+			<span class="text-gray-900">Why create this project?</span>
 		</span>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
 			This project was developed with the primary goal of assisting the HCDC community by providing
@@ -38,33 +80,8 @@
 			of the HCDC community.
 		</p>
 	</AccordionItem>
-	<AccordionItem>
-		<span slot="header" class="text-lg font-bold flex gap-2">
-			<svg
-				class="w-6 h-6 text-gray-900 dark:text-white"
-				aria-hidden="true"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="currentColor"
-				viewBox="0 0 20 20"
-			>
-				<path
-					d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm0 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm1-5.034V12a1 1 0 0 1-2 0v-1.418a1 1 0 0 1 1.038-.999 1.436 1.436 0 0 0 1.488-1.441 1.501 1.501 0 1 0-3-.116.986.986 0 0 1-1.037.961 1 1 0 0 1-.96-1.037A3.5 3.5 0 1 1 11 11.466Z"
-				/>
-			</svg>
-			<span class="text-gray-900">What is the purpose of this website?</span>
-		</span>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			This third-party, open-source project serves as a Uptime Status Checker for official Holy
-			Cross of Davao College (HCDC) websites. It regularly monitors the availability and status of
-			key HCDC websites, providing users with real-time information about their operational status
-			in an hourly basis.
-		</p>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			It regularly monitors the availability and status of key HCDC websites, providing users with
-			real-time information about their operational status in an hourly basis.
-		</p>
-	</AccordionItem>
-	<AccordionItem>
+
+	<AccordionItem open>
 		<span slot="header" class="text-lg font-bold flex gap-2">
 			<svg
 				class="w-6 h-6 text-gray-900 dark:text-white"
@@ -93,7 +110,7 @@
 			or experiencing issues.
 		</p>
 	</AccordionItem>
-	<AccordionItem>
+	<AccordionItem open>
 		<span slot="header" class="text-lg font-bold flex gap-2">
 			<svg
 				class="w-6 h-6 text-gray-900 dark:text-white"
@@ -107,54 +124,21 @@
 				/>
 			</svg>
 			<span class="text-gray-900"
-				>I have some suggestions for new features. How can I contribute?</span
+				>How can I contribute new features or report issues with the site tracker?</span
 			>
 		</span>
+
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			Feel free to contact the developer via email or share your suggestions by filling out this
-			Google Form
+			If you have suggestions for new features or encounter issues with the site tracker, we welcome
+			your input! Please contact the developer via email or share your suggestions and report issues
+			by filling out this <Link href="https://forms.gle/HR3FmfhAPryF3RPdA">Google Form</Link>.
+		</p>
+		<p class="mb-2 text-gray-900 dark:text-gray-400">
+			Additionally, you can create Github Issues in the
+			<Link href="https://github.com/jeoooo/hcdcuptimetracker">project repository</Link>
+			for tracking and resolution.
 		</p>
 	</AccordionItem>
-	<AccordionItem>
-		<span slot="header" class="text-lg font-bold flex gap-2">
-			<svg
-				class="w-6 h-6 text-gray-900 dark:text-white"
-				aria-hidden="true"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="currentColor"
-				viewBox="0 0 20 20"
-			>
-				<path
-					d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm0 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm1-5.034V12a1 1 0 0 1-2 0v-1.418a1 1 0 0 1 1.038-.999 1.436 1.436 0 0 0 1.488-1.441 1.501 1.501 0 1 0-3-.116.986.986 0 0 1-1.037.961 1 1 0 0 1-.96-1.037A3.5 3.5 0 1 1 11 11.466Z"
-				/>
-			</svg>
-			<span class="text-gray-900">The site tracker has issues, how do I report them?</span>
-		</span>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			To report issues with the site tracker, you may create a GitHub issue in the project
-			repository or contact the developer via email.
-		</p>
-	</AccordionItem>
-	<!-- <AccordionItem>
-		<span slot="header" class="text-lg font-bold flex gap-2">
-			<svg
-				class="w-6 h-6 text-gray-900 dark:text-white"
-				aria-hidden="true"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="currentColor"
-				viewBox="0 0 20 20"
-			>
-				<path
-					d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm0 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm1-5.034V12a1 1 0 0 1-2 0v-1.418a1 1 0 0 1 1.038-.999 1.436 1.436 0 0 0 1.488-1.441 1.501 1.501 0 1 0-3-.116.986.986 0 0 1-1.037.961 1 1 0 0 1-.96-1.037A3.5 3.5 0 1 1 11 11.466Z"
-				/>
-			</svg>
-			<span class="text-gray-900">What is the tech stack used for this project?</span>
-		</span>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			The project is built using Svelte and SvelteKit, with additional styling provided by Tailwind
-			CSS and the Flowbite framework.
-		</p>
-	</AccordionItem> -->
 </Accordion>
 
 <style>
@@ -162,6 +146,9 @@
 		font-family: 'Avenir LT Std Black';
 	} */
 	p {
+		font-family: 'Avenir LT Std Roman';
+	}
+	li {
 		font-family: 'Avenir LT Std Roman';
 	}
 </style>

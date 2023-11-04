@@ -3,6 +3,7 @@
 	import StatusCard from './components/StatusCard.svelte';
 	import { onDestroy, onMount } from 'svelte';
 	import { Alert } from 'flowbite-svelte';
+	import type { PageData } from './$types';
 
 	let proxy_urls: string[] = [
 		'https://corsproxy.io/?' + encodeURIComponent('https://www.hcdc.edu.ph/'),
@@ -19,13 +20,13 @@
 	let website: string[] = [
 		'www.hcdc.edu.ph',
 		'www.studentportal.hcdc.edu.ph',
-		'www.cetlms.hcdc.edu.ph/'
+		'www.cetlms.hcdc.edu.ph'
 	];
 
 	let websiteText: string[] = [
 		'The official website of The Holy Cross of Davao College',
 		'The official student portal of The Holy Cross of Davao College',
-		'The Official Learning Management System (LMS) of The Holy Cross of Davao College - College of Engineering and Technology'
+		'The official Learning Management System (LMS) of The Holy Cross of Davao College - College of Engineering and Technology'
 	];
 
 	let statuses: string[] = Array(proxy_urls.length).fill('Checking...');
@@ -50,7 +51,7 @@
 			} catch (error) {
 				statuses[i] = 'Error';
 			}
-			console.log(`${urls[i]}: ${statuses[i]}`);
+			// console.log(`${urls[i]}: ${statuses[i]}`);
 		}
 
 		// Store the statuses in local storage
@@ -76,10 +77,39 @@
 
 	onDestroy(() => clearInterval(interval));
 
-	// export let data: PageData; // check server side
+	type PageData = string[];
+	// export let data: PageData = [
+	// 	'http://hcdc.edu.ph',
+	// 	'http://cetlms.hcdc.edu.ph/',
+	// 	'http://studentportal.hcdc.edu.ph'
+	// ]; // check server side
+
+	// const {'hcdc.edu.ph'}:  = data;
 
 	// console.log(data); // check server side
 </script>
+
+<svelte:head>
+	<title>HCDC Site Status</title>
+
+	<meta name="title" content="HCDC True Site" />
+	<meta name="description" content="HCDC True Site: Are HCDC websites down?" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://metatags.io/" />
+	<meta property="og:title" content="HCDC True Site" />
+	<meta property="og:description" content="HCDC True Site: Are HCDC websites down?" />
+	<meta property="og:image" content="img/linkpreview.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://metatags.io/" />
+	<meta property="twitter:title" content="HCDC True Site" />
+	<meta property="twitter:description" content="HCDC True Site: Are HCDC websites down?" />
+	<meta property="twitter:image" content="img/linkpreview.png" />
+	<!-- Meta Tags Generated with https://metatags.io -->
+</svelte:head>
 
 <main class="pt-4 flex flex-col items-center justify-center">
 	<!-- Alert message -->
@@ -136,16 +166,9 @@
 			websiteText={website[i]}
 		/>
 	{/each}
-
-	<!-- ... (your existing code) ... -->
-	<h1 class="text-4xl font-bold pt-20 pb-8">Frequently Asked Questions (FAQ)</h1>
-	<FAQ />
 </main>
 
 <style>
-	h1 {
-		font-family: 'Avenir LT Std Black';
-	}
 	span {
 		font-family: 'Avenir LT Std Roman';
 	}

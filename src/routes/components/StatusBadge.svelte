@@ -37,6 +37,7 @@
 		</svg>
 	</span>
 {:else}
+	<!-- ? LOADING -->
 	<span
 		class="absolute top-[20px] ml-[14px] bg-yellow-100 text-yellow-800 text-x font-semibold inline-flex items-center px-2.5 py-0.5 rounded dark:bg-yellow-700 dark:text-yellow-400"
 	>
@@ -58,6 +59,22 @@
 			/>
 		</svg>
 	</span>
+	<!-- <span
+		class="absolute top-[20px] ml-[14px] bg-green-100 text-green-800 text-x font-semibold inline-flex items-center px-2.5 py-0.5 rounded border border-green-800 dark:bg-green-700 dark:text-green-400"
+	>
+		Online
+		<svg
+			class="w-4 h-4 ml-1.5"
+			aria-hidden="true"
+			xmlns="http://www.w3.org/2000/svg"
+			fill="currentColor"
+			viewBox="0 0 20 20"
+		>
+			<path
+				d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+			/>
+		</svg>
+	</span> -->
 {/if}
 
 <style>
