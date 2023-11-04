@@ -23,8 +23,8 @@
 			<span class="text-gray-900">What is HCDC True Site?</span>
 		</span>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			This is a third-party, open-source project serves as a Uptime Status Checker for official Holy
-			Cross of Davao College (HCDC) websites.
+			This is the "unofficial", third-party, open-source project that serves as a Uptime Status
+			Checker for official Holy Cross of Davao College (HCDC) websites.
 		</p>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
 			It regularly monitors the availability and status of key HCDC websites, providing users with
@@ -65,15 +65,11 @@
 		</span>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
 			This project was developed with the primary goal of assisting the HCDC community by providing
-			real-time insights into the operational status of key HCDC websites.
-		</p>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			The aim is to empower users with immediate information on whether these essential platforms
-			are accessible or encountering issues.
-		</p>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			By offering a simple and quick overview, the Uptime Status Checker contributes to a seamless
-			online experience for the HCDC community, ensuring they stay informed and connected.
+			real-time insights into the operational status of key HCDC websites. The aim is to empower
+			users with immediate information on whether these essential platforms are accessible or
+			encountering issues. By offering a simple and quick overview, the Uptime Status Checker
+			contributes to a seamless online experience for the HCDC community, ensuring they stay
+			informed and connected.
 		</p>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
 			This project reflects a commitment to enhancing accessibility and transparency for the benefit
@@ -142,9 +138,10 @@
 </Accordion>
 
 <style>
-	/* span {
+	span {
 		font-family: 'Avenir LT Std Black';
-	} */
+	}
+
 	p {
 		font-family: 'Avenir LT Std Roman';
 	}

@@ -132,7 +132,7 @@
 
 			<span class="sr-only">Info</span>
 			<div class="font-medium text-white">
-				<span class="font-medium text-white">All Systems Operational!</span> No reported issues.
+				<span class=" text-white">All Systems Operational!</span> No reported issues.
 			</div>
 		</div>
 	{:else}
@@ -169,7 +169,7 @@
 </main>
 
 <style>
-	span {
-		font-family: 'Avenir LT Std Roman';
+	div {
+		font-family: 'Avenir LT Std Black';
 	}
 </style>
