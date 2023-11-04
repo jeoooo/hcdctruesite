@@ -4,7 +4,7 @@
 </script>
 
 <Accordion
-	class="w-[75%] 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800'"
+	class="w-[80%] 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800'"
 	multiple
 >
 	<AccordionItem open>

@@ -13,7 +13,11 @@
 		<span class="tracker-text text-base text-white">
 			<a href="/" class="hover:underline" aria-label="HCDC True Site">HCDC True Site</a>
 			|
-			<p class="text-xs">made by @jeooo 🎉</p>
+			<p class="text-xs">
+				made by <a class="hover:underline" href="https://jeoooo.github.io/portfolio" target="_blank"
+					>@jeooo</a
+				> 🎉
+			</p>
 		</span>
 		<ul
 			class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"

@@ -1,6 +1,6 @@
 <div class="box">
 	<div class="rectangle">
-		<img src="img/app logo.png" alt="" srcset="" />
+		<img src="img/app logo.png" alt="" srcset="" width="1080" height="277" />
 	</div>
 	<div class="rectangle2" />
 	<div class="rectangle3" />
