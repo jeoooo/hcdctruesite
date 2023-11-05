@@ -6,28 +6,21 @@
 	import Error404 from './components/Error404.svelte';
 </script>
 
-<body>
-	{#if $page.status == 200}
-		<div class="box">
+<body class="bg-gray-100 font-sans">
+	<div class="min-h-screen flex flex-col">
+		{#if $page.status == 200}
 			<Header />
-			<slot />
+			<main class="flex-grow">
+				<div class="container mx-auto p-4">
+					<slot />
+				</div>
+			</main>
 			<Footer />
-		</div>
-	{:else if $page.status == 404}
-		<div class="box">
-			<slot />
-			<Error404 />
-		</div>
-	{/if}
+		{:else if $page.status == 404}
+			<div class="flex-grow">
+				<slot />
+				<Error404 />
+			</div>
+		{/if}
+	</div>
 </body>
-
-<style>
-	body {
-		margin: 0;
-	}
-
-	.box {
-		width: 100%;
-		height: 275px;
-	}
-</style>

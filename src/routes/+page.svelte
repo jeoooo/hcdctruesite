@@ -115,7 +115,7 @@
 	<!-- Alert message -->
 	{#if allSystemsOperational}
 		<div
-			class="w-[70%] border flex items-center p-4 mb-4 text-xl text-green-800 rounded-lg bg-green-800 dark:bg-gray-800 dark:text-green-400"
+			class=" border w-[75%] min-w-[300px] md:w-[700px] lg:w-[1000px] flex items-center p-4 mb-4 text-xl text-green-800 rounded-lg bg-green-800 dark:bg-gray-800 dark:text-green-400"
 			role="alert"
 		>
 			<svg
@@ -156,8 +156,8 @@
 			</div>
 		</div>
 	{/if}
-	<!-- <StatusCard operationalText="Experiencing Issues" />
-	<StatusCard operationalText="dasd" /> -->
+	<!-- <StatusCard operationalText="Experiencing Issues" /> -->
+	<!-- <StatusCard operationalText="dasd" /> -->
 	{#each statuses as status, i}
 		<StatusCard
 			operationalText={status}
