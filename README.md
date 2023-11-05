@@ -1,11 +1,11 @@
 # HCDC True Site
-
-An "unofficial", third-party uptime monitoring service for official  
-Holy Cross of Davao College (HCDC) websites
+<div align="center">
+  
+An "unofficial", third-party uptime monitoring service for official Holy Cross of Davao College (HCDC) websites
 
 ![HCDC True SIte](/github%20md%20preview.png 'HCDC True Sight')
 
-<div align="center">
+
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
