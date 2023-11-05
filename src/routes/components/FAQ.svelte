@@ -23,8 +23,8 @@
 			<span class="text-gray-900">What is HCDC True Site?</span>
 		</span>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			This is the "unofficial", third-party, open-source project that serves as a Uptime Status
-			Checker for official Holy Cross of Davao College (HCDC) websites.
+			HCDC True Site is an "unofficial", third-party, open-source project that serves as a Uptime
+			Status Checker for official Holy Cross of Davao College (HCDC) websites.
 		</p>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
 			It regularly monitors the availability and status of key HCDC websites, providing users with
@@ -67,9 +67,8 @@
 			This project was developed with the primary goal of assisting the HCDC community by providing
 			real-time insights into the operational status of key HCDC websites. The aim is to empower
 			users with immediate information on whether these essential platforms are accessible or
-			encountering issues. By offering a simple and quick overview, the Uptime Status Checker
-			contributes to a seamless online experience for the HCDC community, ensuring they stay
-			informed and connected.
+			encountering issues. By offering a simple and quick overview, HCDC True Site contributes to a
+			seamless online experience for the HCDC community, ensuring they stay informed and connected.
 		</p>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
 			This project reflects a commitment to enhancing accessibility and transparency for the benefit
@@ -93,17 +92,21 @@
 			<span class="text-gray-900">How does it work?</span>
 		</span>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			The Uptime Status Checker operates by routinely inspecting the status of HCDC websites using
-			proxy servers to prevent any disruption.
+			The Uptime Status Checker conducts routine checks by leveraging
+			<a
+				class="text-blue-600 hover:underline"
+				href="https://www.fortinet.com/resources/cyberglossary/proxy-server#:~:text=A%20proxy%20server%20is%20a,web%20pages%20they%20visit%20online."
+				target="_blank">proxy servers</a
+			> to simulate user interactions from various locations, ensuring a comprehensive evaluation of
+			HCDC websites' responsiveness and identification of regional issues. It not only monitors online/offline
+			status but also provides valuable insights into overall website health, detecting instances of
+			unresponsiveness.
 		</p>
 		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			Through simulated user interactions, it sends HTTP requests to the websites, assessing their
-			responsiveness. If a website responds successfully, it is deemed online; otherwise, it is
-			considered offline or experiencing issues.
-		</p>
-		<p class="mb-2 text-gray-900 dark:text-gray-400">
-			If a website responds successfully, it is deemed online; otherwise, it is considered offline
-			or experiencing issues.
+			This proactive approach facilitates issue resolution, making the tool crucial for maintaining
+			the reliability and accessibility of HCDC websites. The tool's fundamental function involves
+			sending HTTP requests and categorizing websites as online or offline based on successful
+			responses, emphasizing its simplicity and immediate utility in assessing website availability.
 		</p>
 	</AccordionItem>
 	<AccordionItem open>
