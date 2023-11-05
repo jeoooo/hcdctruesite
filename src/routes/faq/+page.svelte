@@ -27,17 +27,18 @@
 </svelte:head>
 <main class="pt-4 flex flex-col items-center justify-center">
 	<!-- ... (your existing code) ... -->
-	<h1 class="text-[24px] min-[425px]:text-xs sm:text-[32px] font-bold pt-8 pb-1 text-[#711019]">
+	<h1 class="text-[24px] min-[425px]:text-xxl lg:text-[32px] font-bold pt-8 pb-3 text-[#711019]">
 		HCDC TRUE SITE
 	</h1>
-	<h2 class="text-[16px] min-[425px]:text-xs sm:text-[32px] font-bold pt-1 pb-8 text-[#711019]">
+	<h2 class="text-[16px] min-[425px]:text-lg lg:text-[26px] font-bold pt-3 pb-8 text-[#711019]">
 		Frequently Asked Questions (FAQ)
 	</h2>
 	<Faq />
 </main>
 
 <style>
-	h1 {
+	h1,
+	h2 {
 		font-family: 'Avenir LT Std Black';
 	}
 </style>
