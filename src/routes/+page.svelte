@@ -3,7 +3,7 @@
 	import StatusCard from './components/StatusCard.svelte';
 	import { onDestroy, onMount } from 'svelte';
 	import { Alert } from 'flowbite-svelte';
-	import type { PageData } from './$types';
+	// import type { PageServerDataData } from './$types';
 
 	let proxy_urls: string[] = [
 		'https://corsproxy.io/?' + encodeURIComponent('https://www.hcdc.edu.ph/'),
