@@ -3,17 +3,17 @@
 	import StatusCard from './components/StatusCard.svelte';
 	import { onDestroy, onMount } from 'svelte';
 	import { Alert } from 'flowbite-svelte';
-	import type { PageData } from './$types';
+	// import type { PageServerDataData } from './$types';
 
 	let proxy_urls: string[] = [
 		'https://corsproxy.io/?' + encodeURIComponent('https://www.hcdc.edu.ph/'),
-		'https://corsproxy.io/?' + encodeURIComponent('http://studentportal.hcdc.edu.ph/login'),
+		'https://corsproxy.io/?' + encodeURIComponent('https://studentportal.hcdc.edu.ph/login'),
 		'https://corsproxy.io/?' + encodeURIComponent('http://cetlms.hcdc.edu.ph/')
 	];
 
 	let urls: string[] = [
 		'https://hcdc.edu.ph/',
-		'http://studentportal.hcdc.edu.ph/login',
+		'https://studentportal.hcdc.edu.ph/login',
 		'http://cetlms.hcdc.edu.ph/'
 	];
 
