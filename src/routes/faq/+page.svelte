@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Faq from '../components/FAQ.svelte;
+	import Faq from '../components/FAQ.svelte';
 </script>
 
 <svelte:head>
