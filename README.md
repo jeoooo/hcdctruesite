@@ -78,7 +78,3 @@ Wanna contribute? Here are the following resources you can use when working on t
 # License
 
 [GNU AGPL v3](https://github.com/jeoooo/hcdctruesite/blob/main/LICENSE)
-
-# Contributors
-
-- [Jeo Carlo Lubao](https://github.com/jeoooo) - creator and maintainer
