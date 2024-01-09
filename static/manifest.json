@@ -1,0 +1,48 @@
+{
+    "name": "HCDC True Site",
+    "short_name": "HCDC True Site",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#711019",
+    "theme_color": "#711019",
+    "description": "HCDC Website Status Page",
+    "screenshots": [
+        {
+            "src": "img/linkpreview.png",
+            "sizes": "1200x628",
+            "type": "image/gif",
+            "form_factor": "wide",
+            "label": "Wonder Widgets"
+        },
+        {
+            "src": "img/linkpreview.png",
+            "sizes": "1200x628",
+            "type": "image/gif",
+            "form_factor": "narrow",
+            "label": "Wonder Widgets"
+        }
+    ],
+    "icons": [
+        {
+            "src": "pwa-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
